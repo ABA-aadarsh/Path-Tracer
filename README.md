@@ -7,7 +7,7 @@ Circular Path.py and EquiPolygon.py are separate files but uses similar logic.
 
 The core of these two programmes is **mathematical equation** which gives the locus of the path.
 
-For Circular Path.py
+## For Circular Path.py
 
 `x=r*cos(theta)+h`
 
@@ -15,7 +15,7 @@ For Circular Path.py
 
 where **(x,y)** is coordinates of locus, **(h,k)** is center of rotation and **r** is radius
 
-For EquiPolygon.py
+## For EquiPolygon.py
 
 `x=(z*cos(alpha/2)*cos(theta)) / ( (2-2*cos(alpha))^0.5 * cos((alpha/2)-mod(theta,alpha) )`
 
