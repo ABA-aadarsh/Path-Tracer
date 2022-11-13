@@ -2,11 +2,11 @@
 import pyautogui as auto
 import time
 import math
-def open_mspaint():
-    auto.hotkey("win","r")
-    auto.write("mspaint")
-    auto.press("enter")
-    time.sleep(3)
+# def open_mspaint():
+#     auto.hotkey("win","r")
+#     auto.write("mspaint")
+#     auto.press("enter")
+#     time.sleep(3)
 global pi, n, z 
 pi=math.pi
 def sin(theta):
@@ -22,14 +22,14 @@ def y(theta):
 centre=[674,384]
 n=int(input("Enter the number of sides: "))
 z=int(input("Enter the length of side: "))
-open_mspaint()
+# open_mspaint()
 alpha=360/n 
 theta=0
-auto.mouseDown(x(theta)+centre[0],y(theta)+centre[1],button="left")
+# auto.mouseDown(x(theta)+centre[0],y(theta)+centre[1],button="left")
 while(theta>-370):
     auto.moveTo(x(theta)+centre[0],y(theta)+centre[1],0)
     theta-=1
-auto.mouseUp()
+# auto.mouseUp()
 position=auto.position()
 auto.click(position.x, position.y, 1, 0., button="left")
 exit()
